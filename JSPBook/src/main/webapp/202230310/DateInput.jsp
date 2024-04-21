@@ -26,8 +26,8 @@
         <p>¼­¹ö : <input type="number" name="server" min="0"></p>
         <p>ÀÚ¹Ù : <input type="number" name="java" min="0"></p>
         <p>
-            <input type="checkbox" name="total" id="total"><label for="total">ÃÑÁ¡</label>
-            <input type="checkbox" name="average" id="average"><label for="average">Æò±Õ</label>
+        <input type="checkbox" name="total" id="total"><label for="total">ÃÑÁ¡</label>
+        <input type="checkbox" name="average" id="average"><label for="average">Æò±Õ</label>
         </p>
         <p><input type="submit" value="¼ºÀû ÀÔ·Â"></p>
     </form>

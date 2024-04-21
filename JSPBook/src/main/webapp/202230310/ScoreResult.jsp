@@ -51,6 +51,6 @@
    if (isAverageChecked) { %>
     <p>평균 점수 : <%= String.format("%.2f", average) %></p>
 <% } %>
-    <p>현재 시간 : <%=(new java.util.Date()).toLocaleString()%></p>
+    <p>지금은 : <%=(new java.util.Date()).toLocaleString()%></p>
 </body>
 </html>
