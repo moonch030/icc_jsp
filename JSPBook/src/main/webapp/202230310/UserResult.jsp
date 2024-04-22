@@ -8,11 +8,10 @@
 <body>
 <%
     // 폼에서 전송된 데이터를 가져옵니다.
-    String id = request.getParameter("id");
-    String password = request.getParameter("pw");
-    String rePassword = request.getParameter("repw");
-    String phoneNum = request.getParameter("phNum");
-
+    String id = request.getParameter("id"); //아이디
+    String password = request.getParameter("pw"); //비밀번호
+    String rePassword = request.getParameter("repw"); //비밀번호 확인
+    String phoneNum = request.getParameter("phNum"); //핸드폰
 %>
 	<h1>회원 입력 결과</h1>
 	<p>아이디 : <%=id%>

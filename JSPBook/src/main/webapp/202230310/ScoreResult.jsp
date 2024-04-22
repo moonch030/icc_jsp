@@ -8,13 +8,13 @@
 </head>
 <body>
 <%
-    String department = request.getParameter("department");
-    int serverScore = Integer.parseInt(request.getParameter("server"));
-    int javaScore = Integer.parseInt(request.getParameter("java"));
-    boolean isTotalChecked = request.getParameter("total") != null;
-    boolean isAverageChecked = request.getParameter("average") != null;
+    String department = request.getParameter("department"); //학과
+    int serverScore = Integer.parseInt(request.getParameter("server")); //서버
+    int javaScore = Integer.parseInt(request.getParameter("java")); //자바
+    boolean isTotalChecked = request.getParameter("total") != null; //총점
+    boolean isAverageChecked = request.getParameter("average") != null; //평균
 
-    String departmentName = "";
+    String departmentName = ""; //화면에 보여 질 과이름
  	// 학과에 따라 한글 이름을 설정합니다.
     if ("computer".equals(department)) {
         departmentName = "컴퓨터과";
@@ -27,7 +27,7 @@
     int total = serverScore + javaScore;
     double average = total / 2.0;
 
-    String serverGrade = "";
+    String serverGrade = ""; //등급
     if (serverScore >= 90) serverGrade = "A";
     else if (serverScore >= 80) serverGrade = "B";
     else if (serverScore >= 70) serverGrade = "C";
@@ -45,6 +45,7 @@
     <p>학과 : <%= departmentName %></p>
     <p>서버 점수 : <%= serverScore %> , <%= serverGrade %></p>
     <p>자바 점수 : <%= javaScore %> , <%= javaGrade %></p>
+    
 <% if (isTotalChecked) { %>
     <p>총점 : <%= total %></p>
 <% }
