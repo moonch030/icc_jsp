@@ -16,7 +16,7 @@
 		int c = a/b;		
 	}catch(NumberFormatException e){
 		RequestDispatcher dispatcher = request.getRequestDispatcher("tryCatch_error.jsp");
-		dispatcher.forward(request,response);
+		dispatcher.forward(request,response); 
 	}
 %>
 </body>
